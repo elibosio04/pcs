@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wl,--dependency-file=CMakeFiles/mediatemperature.dir/link.d CMakeFiles/mediatemperature.dir/mediatemperature.cpp.o -o mediatemperature

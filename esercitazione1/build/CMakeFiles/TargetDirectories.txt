@@ -1,0 +1,3 @@
+/home/pcsdocker/Data/pcs/esercitazione1/build/CMakeFiles/mediatemperature.dir
+/home/pcsdocker/Data/pcs/esercitazione1/build/CMakeFiles/edit_cache.dir
+/home/pcsdocker/Data/pcs/esercitazione1/build/CMakeFiles/rebuild_cache.dir
