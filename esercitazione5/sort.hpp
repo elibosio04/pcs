@@ -157,6 +157,25 @@ quicksort(vector<T>& vec, int p, int r){
     return vec;    
 }
 
+template<typename T>
+optional<vector<T>>
+insertion_nuovo(vector<T>& vec, int p, int r)
+{    if (vec.size()==0) {
+        return{};
+    }
+    for ( int i=p+1; i<=r; i++) {
+        T value=vec[i];
+        int j=i-1;
+        while (j>=p && vec[j]>value) {
+            swap(vec[j+1],vec[j]);
+            j=j-1;
+        }
+        vec[j+1]=value;
+    
+    }
+    return vec;
+}
+
 //quicksort ibrido
 //il mio quicksort modificato sotto la soglia di 70 (che ho trovato guardando il mio grafico) usa l'insertion sort e sopra il quicksort
 template<typename T>
@@ -169,7 +188,7 @@ quicksort_ibrido(vector<T>& vec, int p, int r, int soglia = 70)
 
     if (p < r){
         if ((r - p + 1) < soglia) {
-            insertion_sort(vec);
+            insertion_nuovo(vec, p, r);
         } 
         else {
             int q = partition(vec, p, r);
