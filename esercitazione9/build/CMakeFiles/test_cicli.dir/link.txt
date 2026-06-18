@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wl,--dependency-file=CMakeFiles/test_cicli.dir/link.d CMakeFiles/test_cicli.dir/main.cpp.o -o test_cicli
